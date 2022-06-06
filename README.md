@@ -1,6 +1,5 @@
 # Description
-This a project called **Landing Page**. it's have 4 Sections in the body & 4 anchor links in the navbar linked with it.
-When scrolling to the bottom along there is a button called ___To Top___ that will help you back to the top of the page with a click!
+This is a project called **Landing Page**. it has 4 Sections in the body & 4 anchor links in the navbar linked with it. When scrolling to the bottom, there is a button called __To Top__ that will help you back to the top of the page with a click!
 ## Requirements
 - Chrome Browser
 - Firefox
