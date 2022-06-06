@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {margin: 80px 0 60px 0; background-color: #121212;}
+.container {width: 1080px; margin: auto}
+
+:is(header, section, footer) {background-color: rgb(82, 12, 110)}
+
+header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    height: 60px;
+}
+header ul {list-style-type: none; width: 100%; height: 100%;}
+header ul li {
+    display: inline-block;
+    width: 150px;
+    height: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFF;
+    line-height: 60px;
+    padding: 0 15px;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+header ul li:hover {
+    background-color: #FFF;
+    color: #000;
+    transition-property: background color;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+h1 {color: #FFF; font-size: 55px; text-transform: capitalize; padding: 0 5px;}
+
+section.container {
+    margin: 50px auto;
+    padding: 70px 10px 20px;
+    height: 85vh;
+    text-transform: capitalize;
+    color: #FFF;
+}
+section h2 {
+    padding: 10px 0;
+    color: inherit;
+    border-bottom-color: #FFF;
+    border-bottom-style: solid;
+    border-width: 1px;
+    display: block;
+}
+section p {
+    margin: 20px 0;
+    color: inherit;
+    width: 700px;
+    height: 450px;
+    word-break: keep-all;
+    word-spacing: 2px;
+    line-height: 1.4;
+    display: inline-block;
+    overflow-y: auto;
+}
+section:nth-child(even) {text-align: right}
+
+
+button {
+    display: none;
+    right: 10px;
+    bottom: 45px;
+    position: fixed;
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    text-transform: capitalize;
+    font-weight: bold;
+    transition: .5s background ease-in-out;
+    cursor: pointer;
+}
+button:hover {
+    color: #FFF;
+    background-color: rgb(82, 12, 110);
+    transition: .5s background ease-in-out;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    height: 40px;
+}
+footer div.container {
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+
+/* JS Styles */
+.container.active, .active {background-color: #FFF; color: rgb(82, 12, 110); border-bottom-color: }
+.container.active > h2 {border-bottom-color: rgb(82, 12, 110)}
+/* Media Query */
+@media screen and (max-width: 1200px) {
+    .container {width: 1020px}
+    header {height: 50px}
+    header ul li {width: 120px; font-size: 14px; line-height: 50px;}
+    h1 {font-size: 35px}
+    section h2 {font-size: 20px}
+    section p {width: 80%; height: 400px; font-size: 14px}
+    footer div.container {font-size: 14px}
+}
+@media screen and (max-width: 992px) {
+    .container {width: 720px}
+}
+@media screen and (max-width: 768px) {
+    .container {width: 100%}
+    h1 {font-size: 25px}
+    header ul li {width: 100px; font-size: 12px}
+    section {padding: 40px 10px 10px}
+    section p {font-size: 12px; width: 90%}
+    footer div.container {font-size: 12px}
+}
+@media screen and (max-width: 478px) {
+    section {padding: 30px 5px 5px;}
+    button {font-size: 12px; width: 80px}
+}
+
+@media screen and (max-width: 400px) {
+    header {height: auto;}
+    header ul li {display: block; width: 100%;}
+}
