@@ -8,7 +8,7 @@ for (let i = 0; i < sections.length; i++) {
     // Navigation part
     let li = document.createElement('li');
     li.textContent = `section ${i+1}`;
-    li.addEventListener('click', () => {window.scrollTo(0, sections[i].offsetTop)})
+    li.addEventListener('click', () => {window.scrollTo({top: sections[i].offsetTop, behavior: "smooth"})})
     ul.appendChild(li);
    
     // Section part
@@ -32,7 +32,7 @@ for (let i = 0; i < sections.length; i++) {
 header.appendChild(ul);
 
 // Scroll To Top Button
-button.addEventListener('click', () => window.scrollTo({top: 0}));
+button.addEventListener('click', () => window.scrollTo({top: 0, behavior: "smooth"}));
 
 // Navigator
 let lists = document.querySelectorAll('ul li');
